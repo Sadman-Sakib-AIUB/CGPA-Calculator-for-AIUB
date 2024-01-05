@@ -41,7 +41,7 @@ function generateCourseInputs() {
         var creditInput = document.createElement('input');
         creditInput.type = 'text';
         creditInput.id = 'credit' + i;
-        creditInput.placeholder = 'Enter credit of Course ' + i;
+        //creditInput.placeholder = 'Enter credit of Course ' + i;
 
         var gradeLabel = document.createElement('label');
         gradeLabel.innerHTML = 'Grade point for Course ' + i + ':';
@@ -49,7 +49,7 @@ function generateCourseInputs() {
         var gradeInput = document.createElement('input');
         gradeInput.type = 'text';
         gradeInput.id = 'grade' + i;
-        gradeInput.placeholder = 'Enter grade point for Course ' + i;
+        //gradeInput.placeholder = 'Enter grade point for Course ' + i;
 
         courseInputDiv.appendChild(creditLabel);
         courseInputDiv.appendChild(creditInput);

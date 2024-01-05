@@ -55,7 +55,7 @@ tr:nth-child(odd) {
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #0c305d;
     margin: 0;
     padding: 0;
     display: flex;
@@ -66,7 +66,7 @@ body {
 
 .container {
     max-width: 80%;
-    width: 400px;
+    width: 600px;
     padding: 40px;
     background-color: #ffffff;
     border-radius: 8px;
@@ -97,7 +97,7 @@ label {
 input {
     width: 100%;
     padding: 10px;
-    box-sizing: border-box;
+    box-sizing:border-box;
     border: 1px solid #3498db;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -128,14 +128,14 @@ button:hover {
     margin-top: 20px;
     font-weight: bold;
     color: #333;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 #gradingSystem {
     text-align: center;
     color: #3498db;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 #gradingSystemTable {
@@ -163,6 +163,37 @@ button:hover {
     background-color: #2980b9;
 }
 
+/* Existing styles remain unchanged */
+
+.course-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 12px;
+}
+
+.course-input input {
+    width: 20%;
+    margin-bottom: 0;
+    
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 60px;
+    color: #666;
+    
+}
+
+.ud {
+
+    text-decoration: none;
+    
+}
+
+
+
+
 /* Additional Styling for Responsive Design */
 @media only screen and (max-width: 600px) {
     .container {
@@ -172,5 +203,11 @@ button:hover {
 
     input, button {
         width: 100%;
+    }
+
+    .course-input input {
+        width: 20%;
+        margin-bottom: 0;
+        margin-top: 0px;
     }
 }

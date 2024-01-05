@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-oV9eUakO5uPCJ2zhfhXmWPgWr8I4aP1tSkFcGYvHp2mPztRcx96jjF8PHb5lOu+J3+fprBXtD8b5nfEg/c2oJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CGPA Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-calculator"></i> CGPA Calculator</h1>
+        <form>
+            <label for="completedCredit">Total Completed Credit:</label>
+            <input type="text" id="completedCredit" placeholder="Enter completed credit">
+
+            <label for="currentCGPA">Current CGPA:</label>
+            <input type="text" id="currentCGPA" placeholder="Enter current CGPA">
+
+            <label for="semesterCredit">Total Credit in Current Semester:</label>
+            <input type="text" id="semesterCredit" placeholder="Enter total credit">
+
+            <label for="numCourses">Total Number of Courses:</label>
+            <input type="text" id="numCourses" placeholder="Enter total number of courses">
+
+            <div id="coursesInput"></div>
+
+            <button onclick="calculateCGPA()"><i class="fas fa-calculator"></i> Calculate CGPA</button>
+
+            <div id="result"></div>
+        </form>
+
+        <h2 id="gradingSystem" onclick="showGradingSystem()">AIUB Grading System</h2>
+        <table id="gradingSystemTable">
+            <tr>
+                <th>Grade</th>
+                <th>Grade Point</th>
+            </tr>
+            <tr>
+                <td>A+</td>
+                <td>4.00</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>3.75</td>
+            </tr>
+            <tr>
+                <td>B+</td>
+                <td>3.5</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>3.25</td>
+            </tr>
+            <tr>
+                <td>C+</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>2.75</td>
+            </tr>
+            <tr>
+                <td>D+</td>
+                <td>2.50</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>2.25</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-o7GT9d3w51tK9L9PnZB9n5Q15s/xludOm2iL13Tc+tw=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "name": "CGPA Calculator",
+    "short_name": "CGPA Calc",
+    "description": "Calculate your CGPA easily.",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#3498db",
+    "icons": [
+      {
+        "src": "icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  

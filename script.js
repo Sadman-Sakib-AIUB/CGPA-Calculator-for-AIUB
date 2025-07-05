@@ -66,7 +66,11 @@ function generateCourseInputs() {
         var gradeGroup = document.createElement('div');
         gradeGroup.classList.add('form-group');
         var gradeLabel = document.createElement('label');
+<<<<<<< HEAD
         gradeLabel.innerHTML = 'Grade of Course ' + i + ':';
+=======
+        gradeLabel.innerHTML = 'Grade point for Course ' + i + ':';
+>>>>>>> 01a70e5740cf7389470bceb648fac914402c525b
         var gradeSelect = document.createElement('select');
         gradeSelect.id = 'grade' + i;
         for (var j = 0; j < grades.length; j++) {

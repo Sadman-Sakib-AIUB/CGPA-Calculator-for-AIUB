@@ -1,0 +1,158 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+label {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.2);
+    outline: none;
+}
+
+button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: 700;
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+}
+
+#gradingSystem {
+    grid-column: span 2;
+    text-align: center;
+    color: #667eea;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.calculator_heading{
+    color: #667eea;
+}
+
+#gradingSystemTable {
+    grid-column: span 2;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    display: none; /* Initially hidden */
+}
+
+#gradingSystemTable th, #gradingSystemTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#gradingSystemTable th {
+    background-color: #667eea;
+    color: white;
+}
+
+#gradingSystemTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.course-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-column: span 2;
+}
+
+.copyright {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 30px;
+    color: #888;
+}
+
+.ud {
+    text-decoration: none;
+    color: #667eea;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width, .course-row {
+        grid-column: span 1;
+    }
+}
